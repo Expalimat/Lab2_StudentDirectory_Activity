@@ -1,12 +1,15 @@
 .card {
   border: 1px solid #ddd;
+  background-color: #108985;
   border-radius: 8px;
   padding: 16px;
   margin: 8px;
   text-align: center;
+  color: #fff5f5;
 }
 
 .probation {
+  color: black;
   border-color: #d64545;
   background-color: #fff5f5;
 }
