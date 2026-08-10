@@ -1,4 +1,6 @@
 .card {
+  display: flex;
+  align-items: center;
   border: 1px solid #ddd;
   background-color: #108985;
   border-radius: 8px;
@@ -6,6 +8,14 @@
   margin: 8px;
   text-align: center;
   color: #fff5f5;
+}
+
+.card > h3 {
+  flex: 1;
+}
+
+.card > div {
+  flex: 2;
 }
 
 .probation {
