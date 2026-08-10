@@ -9,12 +9,14 @@ export default function StudentCard({ student }) {
     : styles.card;
 
   return (
-    <div className={cardClass}>
-      <h3>{student.name}</h3>
-      <p>{student.course} — Year {student.yearLevel}</p>
-      <p>{isProbation ? 'On Probation' : student.status}</p>
-      <p>GWA: {student.gwa.toFixed(2)}</p>
-      {isDeansLister && <span className={styles.badge}>Dean's Lister</span>}
-    </div>
+<div className={cardClass}>
+  <h3>{student.name}</h3>
+  <div>
+    <p>{student.course} — Year {student.yearLevel}</p>
+    <p>{isProbation ? 'On Probation' : student.status}</p>
+    <p>GWA: {student.gwa.toFixed(2)}</p>
+    {isDeansLister && <span className={styles.badge}>Dean's Lister</span>}
+  </div>
+</div>
   );
 }
